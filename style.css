@@ -88,3 +88,16 @@ footer {
   color: #666; 
   margin-top: 40px; 
 }
+
+.pub-icon {
+  width: 16px;       /* small size */
+  height: 16px;
+  margin-right: 6px; /* spacing between icon and text */
+}
+
+#publications li {
+  font-size: 0.9em;  /* smaller than normal text */
+  margin-bottom: 8px; /* spacing between items */
+  display: flex;
+  align-items: center;
+}
