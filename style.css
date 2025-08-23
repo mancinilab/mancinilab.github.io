@@ -1,66 +1,52 @@
 body { 
   font-family: Arial, sans-serif; 
-  max-width: 900px; 
+  max-width: 1200px; 
   margin: auto; 
   line-height: 1.6; 
-  padding: 0 20px;
-  background-color: #fff;
+  padding: 20px; 
+  display: flex; 
+  background-color: rgb(255,252,247); /* warm background */
 }
 
-/* Header with background */
-header {
-  display: flex;
-  align-items: center; /* vertical centering */
-  background-image: url("background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 150px;       /* adjust as needed */
-  padding: 0 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
+.sidebar {
+  flex: 0 0 200px; /* left sidebar for logo */
+  margin-right: 40px;
 }
 
-/* Logo takes full header height */
-header .logo {
-  height: 100%;
-  margin-right: 20px;
+.sidebar img {
+  width: 100%;
+  height: auto;
 }
 
-/* Text next to logo */
-header .header-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertically center text */
-  color: #fff;             /* white on background */
+.content {
+  flex: 1;
+  padding: 20px;
 }
 
-header .header-text h1 {
-  margin: 0;
-  font-size: 2em;
+.rightbar {
+  flex: 0 0 200px; /* right sidebar for background photo */
+  margin-left: 40px;
 }
 
-header .header-text p {
-  margin: 5px 0 0;
-  font-size: 1.2em;
+.rightbar img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Navigation */
-header nav {
-  margin-top: 10px;
-}
+header { margin-bottom: 20px; }
+header h1 { margin: 0; font-size: 2em; }
+header p { margin: 5px 0 0; font-size: 1.1em; color: #444; }
 
-header nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #fff;
-}
+nav { margin-bottom: 40px; }
+nav a { margin: 0 10px; text-decoration: none; color: #0366d6; }
+nav a:hover { text-decoration: underline; }
 
-header nav a:hover {
-  text-decoration: underline;
-}
-
-/* Page sections */
 section { margin-bottom: 40px; }
 
-footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 40px; }
+footer { 
+  text-align: center; 
+  font-size: 0.9em; 
+  color: #666; 
+  margin-top: 40px; 
+}
