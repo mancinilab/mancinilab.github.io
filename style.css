@@ -7,7 +7,7 @@ body {
 }
 
 .content {
-  background-image: url("background.png"); /* put the image in your repo */
+  background-image: url("background.jpg"); /* put the image in your repo */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: local; /* keeps it fixed relative to content */
