@@ -6,61 +6,80 @@
   <meta name="description" content="Mancini Lab: research in microbiology and biophysics. Publications, team, and contact information.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6; padding: 20px; }
-    header { display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-    .logo { width: 100px; margin-right: 20px; }
-    .title { text-align: left; }
-    .title h1 { margin: 0; font-size: 2em; }
-    .title p { margin: 5px 0 0; font-size: 1.1em; color: #444; }
-    nav { text-align: center; margin-bottom: 40px; }
+    body { 
+      font-family: Arial, sans-serif; 
+      max-width: 1000px; 
+      margin: auto; 
+      line-height: 1.6; 
+      padding: 20px; 
+      display: flex; 
+    }
+    .sidebar {
+      flex: 0 0 200px; /* fixed width column for logo */
+      margin-right: 40px;
+    }
+    .sidebar img {
+      width: 100%; /* logo fills sidebar */
+      height: auto;
+    }
+    .content {
+      flex: 1;
+    }
+    header { margin-bottom: 20px; }
+    header h1 { margin: 0; font-size: 2em; }
+    header p { margin: 5px 0 0; font-size: 1.1em; color: #444; }
+    nav { margin-bottom: 40px; }
     nav a { margin: 0 10px; text-decoration: none; color: #0366d6; }
     section { margin-bottom: 40px; }
-    footer { text-align: center; font-size: 0.9em; color: #666; }
+    footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 40px; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="LabLogo.png" alt="Mancini Lab Logo" class="logo">
-    <div class="title">
+  <div class="sidebar">
+    <img src="logo.png" alt="Mancini Lab Logo">
+  </div>
+
+  <div class="content">
+    <header>
       <h1>The Mancini Lab</h1>
       <p>Single cell ecology</p>
-    </div>
-  </header>
+    </header>
 
-  <nav>
-    <a href="/research.html">Research</a> |
-    <a href="/publications.html">Publications</a> |
-    <a href="/team.html">Team</a> |
-    <a href="/contact.html">Contact</a>
-  </nav>
+    <nav>
+      <a href="/research.html">Research</a> |
+      <a href="/publications.html">Publications</a> |
+      <a href="/team.html">Team</a> |
+      <a href="/contact.html">Contact</a>
+    </nav>
 
-  <section id="research">
-    <h2>Research</h2>
-    <p>We study the physics of life, combining experiments and modeling to understand microbial systems and biophysical principles of living matter.</p>
-  </section>
+    <section id="research">
+      <h2>Research</h2>
+      <p>We study the physics of life, combining experiments and modeling to understand microbial systems and biophysical principles of living matter.</p>
+    </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>Paper A</strong>, Journal, Year.</li>
-      <li><strong>Paper B</strong>, Journal, Year.</li>
-      <li><strong>Paper C</strong>, Journal, Year.</li>
-    </ul>
-  </section>
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>Paper A</strong>, Journal, Year.</li>
+        <li><strong>Paper B</strong>, Journal, Year.</li>
+        <li><strong>Paper C</strong>, Journal, Year.</li>
+      </ul>
+    </section>
 
-  <section id="team">
-    <h2>Team</h2>
-    <p>Postdocs, PhD students, and collaborators in microbiology and biophysics.</p>
-  </section>
+    <section id="team">
+      <h2>Team</h2>
+      <p>Postdocs, PhD students, and collaborators in microbiology and biophysics.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-    <p>University of XYZ<br>Department of Biophysics<br>Address</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+      <p>University of XYZ<br>Department of Biophysics<br>Address</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Mancini Lab</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Mancini Lab</p>
+    </footer>
+  </div>
 </body>
 </html>
