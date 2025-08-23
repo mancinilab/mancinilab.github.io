@@ -95,11 +95,17 @@ footer {
   margin-right: 6px; /* spacing between icon and text */
 }
 
+/* ===== Publications ===== */
+#publications ol {
+  list-style-position: outside; /* keep numbers outside */
+  padding-left: 20px;           /* indentation for numbers */
+}
+
 #publications li {
-  font-size: 0.9em;  /* smaller than normal text */
-  margin-bottom: 8px; /* spacing between items */
-  display: flex;
-  align-items: center;
+  font-size: 0.95em; 
+  margin-bottom: 12px;
+  line-height: 1.4;
+  display: list-item;           /* restore normal list behavior */
 }
 
 /* Existing styles stay the same */
