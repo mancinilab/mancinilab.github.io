@@ -101,3 +101,34 @@ footer {
   display: flex;
   align-items: center;
 }
+
+/* Existing styles stay the same */
+
+/* Responsive adjustments for screens smaller than 800px */
+@media (max-width: 800px) {
+  body {
+    flex-direction: column; /* stack everything vertically */
+    max-width: 100%;        /* allow full width */
+    padding: 10px;
+  }
+
+  .sidebar {
+    flex: 0 0 auto;         /* sidebar takes natural size */
+    margin: 0 auto 20px;    /* center it and add spacing below */
+    width: 150px;           /* smaller sidebar width on mobile */
+  }
+
+  .content {
+    flex: 1 0 auto;
+    padding: 10px;
+  }
+
+  header h1, header p {
+    text-align: center;     /* center header text on mobile */
+  }
+
+  nav {
+    text-align: center;     /* center navigation links */
+  }
+}
+
