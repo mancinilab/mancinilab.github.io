@@ -6,9 +6,13 @@
   <meta name="description" content="Mancini Lab: research in microbiology and biophysics. Publications, team, and contact information.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; line-height: 1.6; padding: 20px; }
-    header { text-align: center; margin-bottom: 40px; }
-    h1 { margin: 0; font-size: 2em; }
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6; padding: 20px; }
+    header { display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .logo { width: 100px; margin-right: 20px; }
+    .title { text-align: left; }
+    .title h1 { margin: 0; font-size: 2em; }
+    .title p { margin: 5px 0 0; font-size: 1.1em; color: #444; }
+    nav { text-align: center; margin-bottom: 40px; }
     nav a { margin: 0 10px; text-decoration: none; color: #0366d6; }
     section { margin-bottom: 40px; }
     footer { text-align: center; font-size: 0.9em; color: #666; }
@@ -16,15 +20,19 @@
 </head>
 <body>
   <header>
-    <h1>The Mancini Lab</h1>
-    <p>Single cell ecology</p>
-    <nav>
-      <a href="/research.html">Research</a> |
-      <a href="/publications.html">Publications</a> |
-      <a href="/team.html">Team</a> |
-      <a href="/contact.html">Contact</a>
-    </nav>
+    <img src="LabLogo.png" alt="Mancini Lab Logo" class="logo">
+    <div class="title">
+      <h1>The Mancini Lab</h1>
+      <p>Single cell ecology</p>
+    </div>
   </header>
+
+  <nav>
+    <a href="/research.html">Research</a> |
+    <a href="/publications.html">Publications</a> |
+    <a href="/team.html">Team</a> |
+    <a href="/contact.html">Contact</a>
+  </nav>
 
   <section id="research">
     <h2>Research</h2>
