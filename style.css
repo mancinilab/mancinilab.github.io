@@ -1,4 +1,20 @@
-body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6; padding: 20px; }
+body { 
+  font-family: Arial, sans-serif; 
+  max-width: 900px; 
+  margin: auto; 
+  line-height: 1.6; 
+  padding: 20px; 
+}
+
+.content {
+  background-image: url("background.png"); /* put the image in your repo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local; /* keeps it fixed relative to content */
+  padding: 20px;
+  border-radius: 10px; /* optional */
+}
+
 header { text-align: center; margin-bottom: 40px; }
 h1 { margin: 0; font-size: 2em; }
 nav a { margin: 0 10px; text-decoration: none; color: #0366d6; }
