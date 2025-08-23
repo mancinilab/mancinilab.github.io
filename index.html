@@ -8,30 +8,33 @@
   <style>
     body { 
       font-family: Arial, sans-serif; 
-      max-width: 1000px; 
+      max-width: 1200px; 
       margin: auto; 
       line-height: 1.6; 
       padding: 20px; 
       display: flex; 
+      background-color: rgb(255,252,247); /* warm background */
     }
     .sidebar {
-      flex: 0 0 200px; /* fixed width column for logo */
+      flex: 0 0 200px; /* left sidebar for logo */
       margin-right: 40px;
     }
     .sidebar img {
-      width: 100%; /* logo fills sidebar */
+      width: 100%; 
       height: auto;
     }
     .content {
       flex: 1;
-      background-image: url("background.jpg"); /* replace with your image */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: local; /* background does not scroll */
       padding: 20px;
-      border-radius: 10px; /* optional: rounded edges */
-      background-color: rgba(255,255,255,0.25); /* overlay for readability */
-      background-blend-mode: lighten;
+    }
+    .rightbar {
+      flex: 0 0 200px; /* right sidebar for background photo */
+      margin-left: 40px;
+    }
+    .rightbar img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
     header { margin-bottom: 20px; }
     header h1 { margin: 0; font-size: 2em; }
@@ -70,12 +73,17 @@
 
     <section id="whatwedo">
       <h2>What we do</h2>
-      <p>We are curious about the life of eveything that is too small to be seen with the naked eye</p>
+      <p>We are curious about the life of everything that is too small to be seen with the naked eye</p>
     </section>
 
     <footer>
       <p>&copy; 2025 Mancini Lab</p>
     </footer>
+  </div>
+
+  <!-- Right sidebar with background photo -->
+  <div class="rightbar">
+    <img src="BackgroundPhoto.jpg" alt="Lab Background Photo">
   </div>
 </body>
 </html>
