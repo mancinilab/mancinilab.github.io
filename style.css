@@ -1,3 +1,16 @@
+/* Lab title + subtitle hover effect */
+.lab-title, .lab-subtitle {
+  text-decoration: none;
+  color: inherit; /* keep normal color */
+  transition: color 0.3s ease;
+}
+
+.lab-title:hover,
+.lab-subtitle:hover {
+  color: red; /* hover color */
+}
+
+
 /* ===== General Layout ===== */
 body { 
   font-family: Arial, sans-serif; 
