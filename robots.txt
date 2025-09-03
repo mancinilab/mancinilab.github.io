@@ -1,0 +1,6 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Disallow:
+
+# Location of your sitemap
+Sitemap: https://mancinilab.github.io/sitemap.xml
